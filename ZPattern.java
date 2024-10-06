@@ -11,13 +11,11 @@ public class ZPattern {
         int s ;
         int co = 0;
         for (int idx = 1; idx <= n; idx++) {
-            // ele = ele+idx;
             c = co+idx;
             for(s=i;s<n;s++){
                 System.out.print(" ");
             }
-            i++; 
-            // int temp = c;
+            i++;
             for(int j=c;j>co;j--){
                 System.out.print(j+" ");
             }
@@ -31,14 +29,12 @@ public class ZPattern {
                 System.out.print(" ");
            }
            i--;
-        //    int j = co;
            int t = temp-1;
            while(temp-->0){
              System.out.print(co--+" ");
            }
            System.out.println();
            temp = t;
-        //    co = j
         }
     }
 }
